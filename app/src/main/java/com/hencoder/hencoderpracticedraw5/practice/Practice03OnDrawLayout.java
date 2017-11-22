@@ -26,6 +26,7 @@ public class Practice03OnDrawLayout extends LinearLayout {
 
     {
         // 在这里插入 setWillNotDraw(false) 以启用完整的绘制流程
+        setWillNotDraw(false);
     }
 
     @Override
@@ -64,6 +65,7 @@ public class Practice03OnDrawLayout extends LinearLayout {
                 canvas.drawCircle(i / spots.length * getHeight() * PATTERN_RATIO + spot.relativeX * getHeight(), spot.relativeY * getHeight(), spot.relativeSize * getHeight(), patternPaint);
             }
         }
+
 
         private class Spot {
             private float relativeX;
